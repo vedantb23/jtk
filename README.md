@@ -47,7 +47,7 @@ npm run dev
 
 ## Screenshots
 
-![Login](./public/screenshots/2.png)
-![List](./public/screenshots/4.png)
-![Profile](./public/screenshots/1.png)
-![Photo](./public/screenshots/3.png)
+![Login](./public/2.png)
+![List](./public/4.png)
+![Profile](./public/1.png)
+![Photo](./public/3.png)
