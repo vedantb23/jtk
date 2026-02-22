@@ -1,16 +1,53 @@
-# React + Vite
+# Jotish-assignment 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Pages
 
-Currently, two official plugins are available:
+- **Login** – Hardcoded validation (testuser / Test123)
+- **List** – Fetches employee data from REST API, shows cards, stats, bar chart, and map
+- **Details** – Dynamic route `/profile/:id`, displays employee profile + camera capture
+- **Photo Result** – Displays captured image (stored in route state)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ReactJS (Vite)
+- React Router DOM
+- Tailwind CSS
+- Recharts
+- shadcn ui
+- MediaDevices API
+- REST API 
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## API
+
+POST:  
+https://backend.jotish.in/backend_dev/gettabledata.php
+
+Body:
+```
+{
+  "username": "test",
+  "password": "123456"
+}
+```
+
+---
+
+## Run
+
+```
+npm install
+npm run dev
+```
+
+---
+
+## Screenshots
+
+![Login](./public/screenshots/2.png)
+![List](./public/screenshots/4.png)
+![Profile](./public/screenshots/1.png)
+![Photo](./public/screenshots/3.png)
